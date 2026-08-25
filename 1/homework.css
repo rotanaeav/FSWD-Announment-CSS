@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Tacteing';
+    src: url('./font/Tacteing.TTF') format('truetype');
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+.moul{
+    font-family: 'Moul', serif;
+}
+.tacteing{
+    font-family: 'Tacteing';
+}
+.battambang {
+    font-family: 'Battambang', sans-serif;
+}
+.page{
+    max-width: 794px;
+    margin: 0 auto;
+    padding: 80px;
+    background-color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+}
+.logo{
+    /* width: 10vw; */
+    width: 200px;
+    padding-bottom: 0.5rem;
+}
+/* .logo img{
+    width: 10vw;
+} */
+.national{
+    font-size: 1.2rem;
+    color:darkblue;
+    text-align: center;
+}
+.national>.tacteing{
+    padding-top: 1rem;
+}
+h1{
+    text-align: center;
+    font-family: 'Moul', serif;
+    font-size: 1.2rem;
+}
+section{
+    font-family: 'Battambang', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+ol, ul{
+    margin-left: 1.7rem;
+    padding-left: 0;
+}
+ol li{ 
+    list-style-position: outside;
+    padding-left: 4rem;
+    padding-bottom: 0.2rem;
+}
+ul li{
+    list-style-type: none;
+    padding-left: 0;
+}
+li>i{
+    padding-right: 0.5rem;
+    margin-left: -2rem;
+}
+.date{
+    display: flex;
+    justify-content: flex-end;
+}
+.date-content{
+    text-align: center;
+    align-items: center;
+}
+.institute-name{
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    margin: 2rem 0;
+    color:darkblue;
+    text-decoration: overline 4px;
+    font-family: 'Battambang', sans-serif;
+}
+
+address{
+    font-family: 'Battambang', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+}
+.location, .contact{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.location>i, .contact>i{
+    border: 1px solid rgb(0, 0, 139);
+    border-radius: 90%;
+    padding: 0.3rem 0.2rem;
+}
+
+.contact>div{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: darkblue;
+}
