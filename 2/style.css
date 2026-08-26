@@ -1,0 +1,84 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.head{
+    background-image: url('./img/dogs.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        background-color: rgba(20, 94, 0, 0.5);
+    }
+nav{
+    width: 100%;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 12vh;
+    list-style: none;
+    text-align: center;
+}
+.logo{
+    height: 12vh;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+}
+.hero h2{
+color:rgb(1, 200, 255);
+font-family: 'Courier New', monospace;
+font-size: 3rem;
+background-color: rgba(1, 200, 255, 0.5);
+padding: 2rem;
+-webkit-text-stroke: 1px blue;
+
+}
+.table-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    /* height: 100vh; */
+    margin-bottom: 4rem;
+}
+.dog-table{
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+th{
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+td{
+    text-align: center;
+    padding:0.5rem;
+}
+td img{
+    border-radius: 5%;
+}
+tr:nth-child(even){
+    background-color: rgba(173, 216, 230, 0.1);
+}
