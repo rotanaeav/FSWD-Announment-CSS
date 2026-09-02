@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group 2 E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2a3990",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 flex justify-between items-center h-16"
+      >
+        <div class="flex items-center gap-8">
+          <a href="#" class="block">
+            <img src="./img/logo.png" alt="Logo" class="h-10 object-contain" />
+          </a>
+          <div class="hidden md:flex gap-6">
+            <a href="#" class="text-primary font-bold">Home</a>
+            <a href="#" class="text-gray-600 hover:text-primary">Shop</a>
+            <a href="#" class="text-gray-600 hover:text-primary">Categories</a>
+            <a href="#" class="text-gray-600 hover:text-primary">Contact</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <button
+            class="px-4 py-2 border border-primary text-primary rounded hidden sm:block hover:bg-gray-50"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mx-auto px-4">
+      <!-- Hero Section -->
+      <section class="py-16 text-center max-w-3xl mx-auto">
+        <h1 class="text-5xl font-bold mb-6">
+          Find Your <span class="text-primary">Perfect</span> Product
+        </h1>
+        <p class="text-xl text-gray-600 mb-8">
+          Explore our high-quality items designed just for you.
+        </p>
+        <div class="flex justify-center gap-4">
+          <a
+            href="#"
+            class="px-6 py-3 bg-primary text-white rounded hover:opacity-90"
+            >Shop Now</a
+          >
+          <a
+            href="#"
+            class="px-6 py-3 border rounded text-gray-700 hover:bg-gray-100"
+            >View Offers</a
+          >
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="py-12">
+        <h2 class="text-2xl font-bold mb-6 border-l-4 border-primary pl-3">
+          Featured Products
+        </h2>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <!-- Product Card 1 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/macbook-air-m2.jpg"
+              alt="MacBook Air M2"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">MacBook Air</span>
+            <h3 class="font-bold text-lg">MacBook Air M2</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$999</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/macbook-air-m3.jpg"
+              alt="MacBook Air M3"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">MacBook Air</span>
+            <h3 class="font-bold text-lg">MacBook Air M3</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$1,099</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/macbook-air-m4.jpg"
+              alt="MacBook Air M4"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">MacBook Air</span>
+            <h3 class="font-bold text-lg">MacBook Air M4</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$999</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/macbook-pro-m2.jpg"
+              alt="MacBook Pro M2"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">MacBook Pro</span>
+            <h3 class="font-bold text-lg">MacBook Pro M2</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$1,299</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/macbook-pro-m3.jpg"
+              alt="MacBook Pro M3"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">MacBook Pro</span>
+            <h3 class="font-bold text-lg">MacBook Pro M3</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$1,599</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/macbook-pro-m3-pro.jpg"
+              alt="MacBook Pro M3 Pro"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">MacBook Pro</span>
+            <h3 class="font-bold text-lg">MacBook Pro M3 Pro</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$1,999</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 7 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/macbook-pro-m4.jpg"
+              alt="MacBook Pro M4"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">MacBook Pro</span>
+            <h3 class="font-bold text-lg">MacBook Pro M4</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$1,599</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 8 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/macbook-pro-m5.jpg"
+              alt="MacBook Pro M5"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">MacBook Pro</span>
+            <h3 class="font-bold text-lg">MacBook Pro M5</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$3,499</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 9 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/imac-m3.jpg"
+              alt="iMac M3"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">Desktop</span>
+            <h3 class="font-bold text-lg">iMac 24-inch M3</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$1,299</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 10 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/mac-mini-m2.jpg"
+              alt="Mac mini M2"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">Desktop</span>
+            <h3 class="font-bold text-lg">Mac mini M2</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$599</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 11 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/mac-studio.jpg"
+              alt="Mac Studio"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">Desktop</span>
+            <h3 class="font-bold text-lg">Mac Studio M2 Max</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$1,999</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Product Card 12 -->
+          <div
+            class="bg-white p-4 rounded border flex flex-col hover:shadow-md transition"
+          >
+            <img
+              src="./img/mac-pro.jpg"
+              alt="Mac Pro"
+              class="h-40 w-full object-contain rounded mb-4"
+            />
+            <span class="text-sm text-gray-500">Desktop</span>
+            <h3 class="font-bold text-lg">Mac Pro M2 Ultra</h3>
+            <div class="mt-4 pt-4 border-t flex justify-between items-center">
+              <span class="font-bold text-xl text-primary">$6,999</span>
+              <i
+                class="fa-solid fa-cart-plus text-gray-400 hover:text-primary text-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-12 py-8 text-center">
+      <div class="flex justify-center mb-6">
+        <img src="./img/logo.png" alt="Logo" class="h-12 object-contain" />
+      </div>
+      <div class="flex justify-center gap-6 mb-4 text-gray-600">
+        <a href="#" class="hover:text-primary">About Us</a>
+        <a href="#" class="hover:text-primary">Shop</a>
+        <a href="#" class="hover:text-primary">FAQ</a>
+      </div>
+      <p class="text-gray-400 text-sm">
+        &copy; 2026 Group 2 FSWD | All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
